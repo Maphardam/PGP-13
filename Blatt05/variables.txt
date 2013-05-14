@@ -1,0 +1,24 @@
+[X,Y,Z] und [john,likes,fish]
+unifizierbar durch
+[X/john],[Y,likes],[Z/fish]
+
+[cat] und [X|Y]
+unifizierbar durch
+[X/cat]
+
+[X,Y|Z] und [mary,likes,wine]
+unifizierbar durch
+[X/mary],[Y/likes],[Z/wine]
+
+[[the,Y]|Z] und [[X,answer],[is,here]]
+unifizierbar durch
+[X/the],[Y/answer],[Z/[is,here]]
+
+[X,Y,X] und [a,Z,Z]
+nicht unifizierbar, da [X/a] != [X/Z]
+
+[[X],[Y],[X]] und [[a],[Z],[Z]]
+nicht unifizierbar, da [X/a] != [X/Z]
+
+[[X],[Y],[X]] und [[a],[Z],[Z]]
+nicht unifizierbar, da [X/a] != [X/Z]]
