@@ -1,0 +1,46 @@
+a)
+
+> (cdr '((a (b c) d)))
+'()
+
+> (car (cdr (cdr '(a (b c) (d e))))))
+(d e)
+
+> (car (cdr (cdr '(a (b c) (d e)))))
+(d e)
+
+> (car (cdr '((1 2) (3 4) (5 6))))
+(3 4)
+
+> (cdr (car '((1 2) (3 4)(5 6))))
+(2)
+
+> (car (cdr (car '((cat dog hen)))))
+dog
+
+> (cadr '(a b c d))
+b
+
+> (cadar '((a b)(c d)(e f)))
+b
+
+b)
+
+> (caddr '(b c a d))
+a
+> (cadar '((b a)(c d)))
+a
+> (caadr '((d c)(a)(b)))
+a
+> (caaar '(((a))))
+a
+
+c)
+
+> (define (wrapa a n) 
+		(cond ((= n 0) 
+				a) 
+				(else 
+					(wrapa (list a) (- n 1)))))
+
+

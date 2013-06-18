@@ -1,0 +1,22 @@
+a)
+
+> ((lambda (a b) (- a b)) 5 3)
+2
+
+b)
+
+mit let:
+> (test 4)
+11
+
+-> lokales x = 7, y = globales x = 4
+-> z = lokales x = 7
+-> z + y = 7 + 4 = 11
+
+mit let*:
+> (test 4)
+14
+
+-> lokales x = 7, y = lokales x = 7
+-> z = lokales x = 7
+-> z + y = 7 + 7 = 14

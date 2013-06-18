@@ -1,0 +1,7 @@
+> (p 10)
+7
+Die Prozedur p ruft die Prozedur (pp 3) auf, in der die 3 mit m summiert wird. m wurde mit 4 global definiert, weswegen 3 mit 4 addiert wird und 7 das Ergebnis ist. Die mitgegebene 10 bei (p 10) spielt für die Prozedur keine Rolle, auch wenn in er Definition von p der Parameter m genannt wurde. Dieses m existiert nur in der Definition von p, wo es aber nicht verwendet wird.
+
+> (q 10)
+13
+Hier wird die Prozedur qq innerhalb der Definition von q definiert, wodurch nicht die globale Variable n (4) verwendet wird, sondern das lokale n (10).
